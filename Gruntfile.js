@@ -151,6 +151,6 @@ module.exports = function(grunt) {
   grunt.registerTask('dev', 'Auto-lints while writing code.', ['test', 'watch:syphon']);
 
   grunt.registerTask('build', 'Builds the library', [
-    'clean', 'lint', 'preprocess', 'template', 'concat', 'uglify'
+    'lint', 'preprocess', 'template', 'concat', 'uglify'
   ]);
 };
