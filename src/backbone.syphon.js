@@ -147,9 +147,9 @@ var getElementType = function(el) {
 // Otherwise, get the form fields from the view.
 var getForm = function(viewOrForm) {
   if (_.isUndefined(viewOrForm.$el)) {
-    return $(viewOrForm).find(':input');
+    return $(viewOrForm).find('input,textarea');
   } else {
-    return viewOrForm.$(':input');
+    return viewOrForm.$('input,textarea');
   }
 };
 
